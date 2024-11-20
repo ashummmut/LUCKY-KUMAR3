@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Portal</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <div class="auction-container">
+        <h1>Auction Item: Crops,wheat,rice etc</h1>
+
+        <div class="auction-item">
+           
+        </div>
+
+        <div class="auction-info">
+            <p><strong>Current Highest Bid: $<span id="highestBid">100</span></strong></p>
+            <p>Time Remaining: <span id="timer">00:10</span> (10 seconds)</p>
+        </div>
+
+        <div class="bid-section">
+            <input type="number" id="bidAmount" placeholder="Enter your bid" min="1">
+            <button onclick="placeBid()">Place Bid</button>
+        </div>
+
+        <div class="bid-history">
+            <h2>Bid History</h2>
+            <ul id="bidHistoryList">
+                <li>No bids placed yet.</li>
+            </ul>
+        </div>
+
+        <p class="footer">Auction ends soon!</p>
+    </div>
+   
+        <header>
+            <h1>Farmers' Auction Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#auctions">Auctions</a></li>
+                    <li><a href="#schemes">Government Schemes</a></li>
+                    <li><a href="#msp">MSP Data</a></li>
+                    <li><a href="#fertilizers">Fertilizers</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <!-- Auction Section -->
+            <section id="auctions">
+                <h2>Active Auctions</h2>
+                <div id="auction-list"></div>
+            </section>
+    
+            <!-- Government Schemes Section -->
+            <section id="schemes">
+                <h2>Government Schemes</h2>
+                <div id="schemes-list"></div>
+            </section>
+    
+            <!-- MSP Data Section -->
+            <section id="msp">
+                <h2>Minimum Support Prices (MSP)</h2>
+                <table id="msp-table">
+                    <thead>
+                        <tr>
+                            <th>Crop</th>
+                            <th>MSP (₹/quintal)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+    
+            <!-- Fertilizers Section -->
+            <section id="fertilizers">
+                <h2>Fertilizer Information</h2>
+                <div id="fertilizer-list"></div>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Farmers' Auction Portal. All Rights Reserved.</p>
+        </footer>
+    
+        <script src="internal.js"></script>
+    
+</body>
+</html>
